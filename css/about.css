@@ -173,17 +173,19 @@ div.gallery {
     float: left;
     width: 23%;
     border-radius: 25px;
+    
 
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="gallery"] {
+    width: 100%;
+  }
 }
 
 div.gallery:hover {
     border: 3px solid plum;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 22px;
 }
 
 div.desc {

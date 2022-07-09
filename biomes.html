@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css" />
+    <title>Biomes</title>
+    <link rel="icon" type="images/png" href="Biomes.png">
+    <link rel="stylesheet" href="css/Biomes.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="Biomes KitPvP">
+    <meta property="twitter:url" content="https://tectonix.djstomp.net/">
+    <meta name="twitter:title" content="Biomes KitPvP">
+    <meta name="twitter:description" content="Groundbreaking.">
+    <meta name="twitter:image" content="https://i.imgur.com/iVVnGqP.gif">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tectonix.djstomp.net" />
+    <meta property="og:image" content="https://i.imgur.com/aeg7eax.gif" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta property="og:description" content="Groundbreaking." />
+    <meta property="og:title" content="Tectonix" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body class="noselect">
+    <script>
+        function copyInvite() {
+            navigator.clipboard.writeText("HXKDS_oQL-8").then(function () {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+            }, function () {
+                var y = document.getElementById("invitebutton");
+                y.text = "Code: HXKDS_oQL-8"
+                var x = document.getElementById("wackbar");
+                x.className = "show";
+                setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+            });
+        }
+    </script>
+    <div id="top">
+        <div id="logo"> <img src="images/Biomeslogi.png" alt="Biomes"></div>
+        <div id="flashingtext">Groundbreaking!</div>
+        <div class="mc-menu">
+            <div class="mc-button full">
+                <div class="title" onclick="window.location.href='minecraft://acceptRealmInvite?inviteID=HXKDS_oQL-8'">Join Biomes</div>
+            </div>
+            <div class="mc-button full">
+                <div class="title" onclick="copyInvite()" id="invitebutton">Copy Invite Code</div>
+            </div>
+
+            <div class="double">
+                <div class="mc-button full">
+                    <div class="title" onclick="window.location.href='https://discord.com/invite/5KzccDdAQX'">Discord</div>
+                </div>
+                <div class="mc-button full">
+                    <div class="title" onclick="window.location.href='https://www.xbox.com/games/store/minecraft-java-bedrock-edition-for-pc/9nxp44l49shj'">Get Minecraft</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="snackbar">Copied to clipboard!</div>
+    <div id="wackbar">Unable to copy to clipboard!</div>
+    </div>
+    <div>
+        <a style="text-decoration: none;" href="https://www.allmylinks.com/desiignerr/" id="desig">Biomes logo by Desiignerr</a>
+    </div>
+</body>
+
+</html>

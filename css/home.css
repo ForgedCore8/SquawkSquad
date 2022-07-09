@@ -20,20 +20,59 @@
     background: darkmagenta;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    color: #fff;
+    margin: 0;
+
+}
+
+.nav-links a {
+    color: #fff;
+    margin: 0;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
 ul {
     list-style-type: none;
-    padding: 0;
     overflow: hidden;
     background-color: #111;
     position: fixed;
-    width: 97.5%;
+    width: 100%;
     height: auto;
     top: 0;
     z-index: 99;
 }
 
-li {
-    float: left;
+
+
+.logo-image {
+    width: 15%;
+    height: auto;
+    float: center;
+    margin-top: 1px;
+    margin-bottom: -1px;
+
 }
 
 li a {
@@ -45,11 +84,19 @@ li a {
     font-family: Arial, sans-serif;
 }
 
-li a:hover:not(.active) {
+li a:hover:is(.inactive) {
+    background-color: #222;
+}
+
+div a:hover:is(.inactive) {
     background-color: #222;
 }
 
 li a:hover:is(.active) {
+    background-color: #b424b4;
+}
+
+div a:hover:is(.active) {
     background-color: #b424b4;
 }
 
@@ -86,7 +133,21 @@ body {
     background-size: 5000px 100%;
     background-position: top;
     background-repeat: 0;
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+
+    width: fit-content;
 }
+
+/*
+
+get the browser
+yo check colored backround
+
+where
+*/
 
 h3 {
     color: #ab16ab;
@@ -97,9 +158,20 @@ h3 {
     float: center;
 }
 
+#title      {
+    margin: 100px 0px 0px 0px;
+    }
+
 .colored-backround {
     background-color: black;
-    width: 100%;
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+}
+
+.colored-backround_FOOTER {
+    background-color: black;
+    width: 98%;
     height: auto;
     padding: 10px;
 }
@@ -116,11 +188,4 @@ h3 {
 .disabled {
     opacity: 0.5;
     cursor: not-allowed;
-}
-
-.logo {
-    width: 7.5%;
-    height: auto;
-    padding-left: 30.5%;
-
 }
